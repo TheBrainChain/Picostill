@@ -1,0 +1,48 @@
+{
+  "name": "picostill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --ignore ./server/data server/server ",
+    "build": "react-scripts build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.4.1",
+    "d3": "^5.15.0",
+    "d3-array": "^2.4.0",
+    "d3-axis": "^1.0.12",
+    "d3-line": "0.0.1",
+    "d3-scale": "^3.2.1",
+    "d3-selection": "^1.4.1",
+    "d3-shape": "^1.3.7",
+    "d3-svg-legend": "^2.25.6",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.2",
+    "react": "^16.13.0",
+    "react-bootstrap": "^1.0.0-beta.17",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0",
+    "uplot": "^1.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
