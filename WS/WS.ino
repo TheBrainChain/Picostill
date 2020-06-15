@@ -11,8 +11,8 @@ PIDController pid; // Create an instance of the PID controller class, called "pi
 ESP8266WiFiMulti WiFiMulti;
 WebSocketsClient webSocket;
 
-const char* SSID = "";
-const char* PASSWORD = "";
+const char* SSID = "MonkeyHouse6";
+const char* PASSWORD = "DVMonster7654";
 
 float currentTemp = 0;
 float targetTemp = 0;
@@ -77,7 +77,7 @@ void setup()
   }
   pinMode(16, OUTPUT);
   pid.begin();          // initialize the PID instance
-  pid.setpoint(120);    // The "goal" the PID controller tries to "reach"
+  pid.setpoint(130);    // The "goal" the PID controller tries to "reach"
   pid.tune(3, 1, 1.5);    // Tune the PID, arguments: kP, kI, kD
   pid.limit(0, 255);    // Limit the PID output between 0 and 255, this is important to get rid of integral windup!
   webSocket.begin("192.168.1.138", 8080, "/arduino");
